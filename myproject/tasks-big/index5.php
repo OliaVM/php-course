@@ -1,3 +1,4 @@
+
 <?php
 $handle = fopen("file.txt", "r");
 
@@ -36,3 +37,4 @@ for ($i=0;$i<count($list);$i++)
 echo "</table>"; 
 
 ?>
+
