@@ -1,9 +1,10 @@
 <?php
-$mas = array('12', '14', '5', '9', '11', '86', '47', '528', '63', '4');
+//Найдите сумму и произведение элементов массива.
+$array_of_numbers = array('12', '14', '5', '9', '11', '86', '47', '528', '63', '4');
 $sum = 0;
 $proizv = 1;
-for ($i=0; $i<count($mas); ++$i){
-	$b = $mas[$i];
+for ($i = 0; $i < count($array_of_numbers); ++$i){
+	$b = $array_of_numbers[$i];
 	$sum = $sum + $b;
 	$proizv = $proizv * $b;
 }
@@ -11,8 +12,7 @@ for ($i=0; $i<count($mas); ++$i){
 	echo "<br>";
 	echo "proizv = " . $proizv;
 	echo "<br>";
-	echo "sum2 = " . array_sum($mas);
+//Способ2: с помощью стандартных функций 
+	echo "sum2 = " . array_sum($array_of_numbers);
 	echo "<br>";
-	echo "proizv2 = " . array_product($mas);
-
-?>
+	echo "proizv2 = " . array_product($array_of_numbers);

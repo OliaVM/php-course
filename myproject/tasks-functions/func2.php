@@ -1,5 +1,6 @@
 <?php
-function calculationFactorial($n){
+function calculationFactorial($n)
+{
 	if ($n == 0){
 		$factorial = 1;
 		return $factorial;
