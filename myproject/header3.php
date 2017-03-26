@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 	<head>
 	<link rel="stylesheet" type="text/css" href="index2.0.css">
 	</head>
@@ -21,7 +21,7 @@ $array_menu = array();
 $array_menu[$i]['url']='/index2.php';
 $array_menu[$i++]['name']='Главная';
 
-$array_menu[$i]['url']='/loops/loop1.php';
+$array_menu[$i]['url']='loops/loop1.php';
 $array_menu[$i++]['name']='Loop 1';
 $array_menu[$i]['url']='/loops/loop2.php';
 $array_menu[$i++]['name']='Loop 2';
