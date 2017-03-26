@@ -1,0 +1,33 @@
+mysql -u root -p
+SHOW DATABASES;
+USE myproject;
+SHOW TABLES;
+CREATE TABLE usersdata (username VARCHAR(60), lastname VARCHAR(60), birthday CHAR(10), place_of_birthday VARCHAR(128), current_location VARCHAR(128)) ENGINE InnoDB;
+DESCRIBE  usersdata;
+ALTER TABLE usersdata ADD id INT UNSIGNED NOT NULL AUTO_INCREMENT KEY;
+DESCRIBE usersdata;
+INSERT INTO usersdata(username, lastname, birthday, place_of_birthday, current_location)
+VALUES('1John', 'Putin', '3.06.1961', 'SPB1', 'Moscow1');
+INSERT INTO usersdata(username, lastname, birthday, place_of_birthday, current_location)
+VALUES('2John', 'Putin', '3.06.1962', 'SPB2', 'Moscow2');
+INSERT INTO usersdata(username, lastname, birthday, place_of_birthday, current_location)
+VALUES('3John', 'Putin', '3.06.1963', 'SPB3', 'Moscow3');
+INSERT INTO usersdata(username, lastname, birthday, place_of_birthday, current_location)
+VALUES('4John', 'Putin', '3.06.1964', 'SPB4', 'Moscow4');
+INSERT INTO usersdata(username, lastname, birthday, place_of_birthday, current_location)
+VALUES('5John', 'Putin', '3.06.1965', 'SPB5', 'Moscow5');
+INSERT INTO usersdata(username, lastname, birthday, place_of_birthday, current_location)
+VALUES('6John', 'Putin', '3.06.1966', 'SPB6', 'Moscow6');
+INSERT INTO usersdata(username, lastname, birthday, place_of_birthday, current_location)
+VALUES('7ohn', 'Putin', '3.06.1967', 'SPB7', 'Moscow7');
+INSERT INTO usersdata(username, lastname, birthday, place_of_birthday, current_location)
+VALUES('8John', 'Putin', '3.06.1968', 'SPB8', 'Moscow8');
+INSERT INTO usersdata(username, lastname, birthday, place_of_birthday, current_location)
+VALUES('9John', 'Putin', '3.06.1969', 'SPB9', 'Moscow9');
+SELECT * FROM usersdata;
+
+CREATE TABLE usersempty (username VARCHAR(60), lastname VARCHAR(60), birthday CHAR(10), place_of_birthday VARCHAR(128), current_location VARCHAR(128)) ENGINE InnoDB;
+DESCRIBE  usersempty;
+ALTER TABLE usersempty ADD id INT UNSIGNED NOT NULL AUTO_INCREMENT KEY;
+DESCRIBE  usersempty;
+SELECT * FROM usersempty;
