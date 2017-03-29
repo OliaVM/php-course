@@ -1,6 +1,6 @@
-<html>
+﻿<html>
 	<head>
-	<link rel="stylesheet" type="text/css" href="index2.0.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
 		<div id="container">

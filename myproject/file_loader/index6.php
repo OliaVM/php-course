@@ -1,26 +1,25 @@
 <?php
 
-var_dump($_POST);
-var_dump($_FILES);
+//var_dump($_POST);
+//var_dump($_FILES);
 
-$isFormSubmit = isset($_POST['csv_file_upload']);
+$isFormSubmit = isset($_POST['csv_file_upload']);  // Проверяем, загрузил ли пользователь файл
 if ($isFormSubmit === true) {
     $csvFile =  (isset($_Files['csv_file']['tmp_name']))
         ? $_FILES['csv_file']['tmp_name']
         : false;
+    $csvFile = _dir_ . 'data/user.csv';
+//$csvFile = _dir_ . 'file_loader/data/users_empty.csv'; //путь к загружаемому файлу
+//$csvFile = _dir_ . 'file_loader/data/empty.csv';
+    //echo 'File Uploaded'; 
 
-//$csvFile = _dir_ . '/data/user.csv';
-//$csvFile = _dir_ . '/data/users_empty.csv';
-//$csvFile = _dir_ . '/data/empty.csv';
-
-
+    
 if (!file_exsist($csvFile)) {
     echo "File not found";
     die();
 }
 
 $handle = fopen($csvFile, "r+");   
-
     if ($handle !== false) {
            $rows = [];
 	       while (($buffer = fgets($handle, 4096)) !== false) {
@@ -28,17 +27,19 @@ $handle = fopen($csvFile, "r+");
 		    }
             fclose($handle);
 
-            if (count($rows) == 0){
+            if (count($rows) == 0){    //если строка пустая
             echo "File $scvFile is empty";
             die();
             }
 
-    $coloumns = $rows[0];
+    $columns = $rows[0];   // = первой строке (шапка таблицы)
     $columnCount = count($columns);
-    $users = array_slice($rows, 1);
-    $usersCount = count($users);
+    $users = array_slice($rows, 1); // cо второго элемента
+    //$usersCount = count($users);
     }
-//var_dump($users); 
+var_dump($users); 
+
+  // move_uploaded_file($_FILES['csv_file']['tmp_name'],basename($_FILES['csv_file']['tmp_name']));
 
 }
 ?>
@@ -50,9 +51,9 @@ $handle = fopen($csvFile, "r+");
     <body>
         <h1> CSV loader </h1>
 
-        <form method = "POST" name = "csv_file_upload" enctype="multipart/form-data">
+        <form method = "POST"  name = "csv_file_upload" enctype="multipart/form-data">
         <input type ='hidden'>
-         Csv file: <input type = 'file' name "csv_file">
+         Csv file: <input type = 'file' name = "csv_file">
                 <input type = "submitt" name = "csv_file_submit" value = "upload">
         </form>
 
