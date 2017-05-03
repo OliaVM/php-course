@@ -1,4 +1,5 @@
 ﻿<?php
+require_once  '/var/www/html/myproject/webPages/header.php';
 //Упорядочить значения массива по возрастанию. 
 $array = array(1, 6, 8, 4483, 6, 99 , 85, 111);
 //$array = array('1', '2', '4', '8', '4', '2', '5');
@@ -23,3 +24,4 @@ asort($array2);
 echo "<pre>";
 print_r ($array2);
 echo "<pre>";
+require_once  '/var/www/html/myproject/webPages/footer.php';

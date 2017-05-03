@@ -1,4 +1,5 @@
 <?php
+require_once  '/var/www/html/myproject/webPages/header.php';
 //Напишите PHP класс калькулятор,который принимает два значения как аргументы 
 //и умеет складывать, вычитать, умножать и делить эти значения при вызове соответствующих методов.
 
@@ -49,3 +50,4 @@ echo "12 + 6 = " . $mycalc2->add2(12, 6). "<br>"; // Сложение. Displays 
 echo "12 * 6 = " . $mycalc2->multiply2(12, 6). "<br>"; // Умножение. Displays 72 
 echo "12 - 6 = " . $mycalc2->deduction2(12, 6). "<br>"; // Вычитание
 echo "12 : 6 = " . $mycalc2->div2(12, 6); // Деление
+require_once  '/var/www/html/myproject/webPages/footer.php';

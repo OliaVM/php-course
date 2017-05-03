@@ -1,4 +1,5 @@
 <?php
+require_once  '/var/www/html/myproject/webPages/header.php';
 function handler($file, $separator)
 {
 	$handle = fopen($file, "r+");
@@ -19,3 +20,4 @@ $list1 = handler("filebooks.txt", "|");
 echo "<pre>";
 print_r($list1);
 echo "<pre>";
+require_once  '/var/www/html/myproject/webPages/footer.php';

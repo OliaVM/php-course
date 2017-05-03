@@ -1,4 +1,5 @@
 <?php
+require_once  '/var/www/html/myproject/webPages/header.php';
 // Напишите простой PHP класс, который отображает приветственное сообщение: 
 //"Hello All, I am Scott", где Scott - значение аргумента метода внутри класса.
 class Message
@@ -12,6 +13,7 @@ class Message
 }
 $object = new Message;
 $object->getName();
+require_once  '/var/www/html/myproject/webPages/footer.php';
 
 
 	

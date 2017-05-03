@@ -1,4 +1,5 @@
 <?php
+require_once  '/var/www/html/myproject/webPages/header.php';
 $VInMetersPerSecond = 1;
 function speed($S, $t)
 {
@@ -11,3 +12,4 @@ $V1 = speed(1000, 8);
 echo "Скорость движения машины в км/ч = " . $V1[0];
 echo "<br>";
 echo "Скорость движения машины в м/с = " . $V1[1];
+require_once  '/var/www/html/myproject/webPages/footer.php';

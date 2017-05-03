@@ -1,5 +1,5 @@
 <?php
- 
+require_once  '/var/www/html/myproject/webPages/header.php'; 
 $arr = array();
 for ($i=0; $i<=10; $i++) {
     $arr[] = rand(0, 30);
@@ -25,7 +25,6 @@ $arr[$keyMax] = $min;
 echo "<pre>";
 print_r($arr);
 echo "<pre>";
- 
-?>
+require_once  '/var/www/html/myproject/webPages/footer.php';
 
 

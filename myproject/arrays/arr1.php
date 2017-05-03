@@ -1,4 +1,5 @@
-<?php
+<?php 
+require_once  '/var/www/html/myproject/webPages/header.php'; 
 //Заполнить массив длины n нулями и единицами, 
 //при этом данные значения чередуются, начиная с нуля.
 $arr1 = array(); 
@@ -15,4 +16,4 @@ for ($i = 0; $i < $n; $i++) {
 echo "<pre>";
 print_r ($arr1);
 echo "<pre>";
-
+require_once  '/var/www/html/myproject/webPages/footer.php'; 

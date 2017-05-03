@@ -1,4 +1,5 @@
 <?php
+require_once  '/var/www/html/myproject/webPages/header.php';
 $arr = array();
 for ($i = 0; $i < 10; $i++) {
 	$arr[$i] = rand(-100, 100);
@@ -13,3 +14,4 @@ var_dump($arr);
 	}
 echo "Массив с 0 после отрицательных  элементов";
 var_dump($arr2);
+require_once  '/var/www/html/myproject/webPages/footer.php';

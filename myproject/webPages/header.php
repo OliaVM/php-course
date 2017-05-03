@@ -1,6 +1,6 @@
 ﻿<html>
 	<head>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="http://myproject.local/webPages/style.css">
 	</head>
 	<body>
 		<div id="container">
@@ -13,108 +13,68 @@
 			<div id="main">
 				<div id="menu">
 				<P><h1>PHP tasks</h1></P>
-				
-<?php
-$i = 0;
-$array_menu = array();
-
-$array_menu[$i]['url']='/index2.php';
-$array_menu[$i++]['name']='Главная';
-
-$array_menu[$i]['url']='/loops/loop1.php';
-$array_menu[$i++]['name']='Loop 1';
-$array_menu[$i]['url']='/loops/loop2.php';
-$array_menu[$i++]['name']='Loop 2';
-$array_menu[$i]['url']='/loops/loop3.php';
-$array_menu[$i++]['name']='Loop 3';
-$array_menu[$i]['url']='/loops/loop4.php';
-$array_menu[$i++]['name']='Loop 4';
-$array_menu[$i]['url']='/loops/loop5.php';
-$array_menu[$i++]['name']='Loop 5';
-$array_menu[$i]['url']='/loops/loop6.php';
-$array_menu[$i++]['name']='Loop 6';
-
-$array_menu[$i]['url']='/arrays/arr1.2.php';
-$array_menu[$i++]['name']='Array 1';
-$array_menu[$i]['url']='/arrays/arr2.php';
-$array_menu[$i++]['name']='Array 2';
-$array_menu[$i]['url']='/arrays/arr3.php';
-$array_menu[$i++]['name']='Array 3';
-$array_menu[$i]['url']='/arrays/arr4.php';
-$array_menu[$i++]['name']='Array 4';
-$array_menu[$i]['url']='/arrays/arr5.php';
-$array_menu[$i++]['name']='Array 5';
-$array_menu[$i]['url']='/arrays/arr6.php';
-$array_menu[$i++]['name']='Array 6';
-$array_menu[$i]['url']='/arrays/arr7.php';
-$array_menu[$i++]['name']='Array 7';
-$array_menu[$i]['url']='/arrays/arr8.php';
-$array_menu[$i++]['name']='Array 8';
-$array_menu[$i]['url']='/arrays/arr9.php';
-$array_menu[$i++]['name']='Array 9';
-$array_menu[$i]['url']='/arrays/arr10.php';
-$array_menu[$i++]['name']='Array 10';
-$array_menu[$i]['url']='/arrays/arr11.php';
-$array_menu[$i++]['name']='Array 11';
-$array_menu[$i]['url']='/arrays/arr12.php';
-$array_menu[$i++]['name']='Array 12';
-
-
-$array_menu[$i]['url']='/dates/date1.php';
-$array_menu[$i++]['name']='Date 1';
-$array_menu[$i]['url']='/dates/date2.php';
-$array_menu[$i++]['name']='Date 2';
-$array_menu[$i]['url']='/dates/date3.php';
-$array_menu[$i++]['name']='Date 3';
-$array_menu[$i]['url']='/dates/date4.php';
-$array_menu[$i++]['name']='Date 4';
-$array_menu[$i]['url']='/dates/date5.php';
-$array_menu[$i++]['name']='Date 5';
-$array_menu[$i]['url']='/dates/date6.php';
-$array_menu[$i++]['name']='Date 6';
-$array_menu[$i]['url']='/dates/date7.php';
-$array_menu[$i++]['name']='Date 7';
-$array_menu[$i]['url']='/dates/date8.php';
-$array_menu[$i++]['name']='Date 8';
-
-
-$array_menu[$i]['url']='/dates/date9.php';
-$array_menu[$i++]['name']='Date 9';
-$array_menu[$i]['url']='/dates/date10.php';
-$array_menu[$i++]['name']='Date 10';
-$array_menu[$i]['url']='/dates/date11.php';
-$array_menu[$i++]['name']='Date 11';
-$array_menu[$i]['url']='/dates/date12.php';
-$array_menu[$i++]['name']='Date 12';
-$array_menu[$i]['url']='/dates/date13.php';
-$array_menu[$i++]['name']='Date 13';
-$array_menu[$i]['url']='/dates/date14.php';
-$array_menu[$i++]['name']='Date 14';
-$array_menu[$i]['url']='/dates/date15.php';
-$array_menu[$i++]['name']='Date 15';
-$array_menu[$i]['url']='/dates/date16.php';
-$array_menu[$i++]['name']='Date 16';
-
-$array_menu[$i]['url']='/classes/class1.php';
-$array_menu[$i++]['name']='Class 1';
-$array_menu[$i]['url']='/classes/class2.php';
-$array_menu[$i++]['name']='Class 2';
-$array_menu[$i]['url']='/classes/class3.php';
-$array_menu[$i++]['name']='Class 3';
-$array_menu[$i]['url']='/classes/class4.php';
-$array_menu[$i++]['name']='Class 4';
-$array_menu[$i]['url']='/classes/class5.php';
-$array_menu[$i++]['name']='Class 5';
-$array_menu[$i]['url']='/classes/class6.php';
-$array_menu[$i++]['name']='Class 6';
-
-echo "<ul>\n";
-for ($i=0;$i<count($array_menu);$i++)
-{
-       echo ($_SERVER["REQUEST_URI"] == $array_menu[$i]['url']) ? '<li class="active">': '<li>';
-       echo "<a href=\"".$array_menu[$i]['url']."\">".$array_menu[$i]['name']."</a></li>\n";
-}
-echo "</ul>";
-?>
+					<ul>
+						<li><a href="#">Loops</a></li>
+						<ul>
+							<li><a href="http://myproject.local/loops/loop1.php">Loop-1</a></li>
+							<li><a href="http://myproject.local/loops/loop2.php">Loop-2</a></li>
+							<li><a href="http://myproject.local/loops/loop3.php">Loop-3</a></li>
+							<li><a href="http://myproject.local/loops/loop4.php">Loop-4</a></li>
+							<li><a href="http://myproject.local/loops/loop5.php">Loop-5</a></li>
+							<li><a href="http://myproject.local/loops/loop6.php">Loop-6</a></li>
+						</ul>
+						<li><a href="#">Arrays</a></li>
+						<ul class="sub-menu">
+							<li><a href="http://myproject.local/arrays/arr1.php">Array-1</a></li>
+							<li><a href="http://myproject.local/arrays/arr2.php">Array-2</a></li>
+							<li><a href="http://myproject.local/arrays/arr3.php">Array-3</a></li>
+							<li><a href="http://myproject.local/arrays/arr4.php">Array-4</a></li>
+							<li><a href="http://myproject.local/arrays/arr5.php">Array-5</a></li>
+							<li><a href="http://myproject.local/arrays/arr6.php">Array-6</a></li>
+							<li><a href="http://myproject.local/arrays/arr7.php">Array-7</a></li>
+							<li><a href="http://myproject.local/arrays/arr8.php">Array-8</a></li>
+							<li><a href="http://myproject.local/arrays/arr9.php">Array-9</a></li>
+							<li><a href="http://myproject.local/arrays/arr10.php">Array-10</a></li>
+							<li><a href="http://myproject.local/arrays/arr11.php">Array-11</a></li>
+						</ul>
+						<li><a href="#">Functions</a></li>
+						<ul>
+							<li><a href="http://myproject.local/functions/func1.php">Function-1</a></li>
+							<li><a href="http://myproject.local/functions/func2.php">Function-2</a></li>
+							<li><a href="http://myproject.local/functions/func3.php">Function-3</a></li>
+							<li><a href="http://myproject.local/functions/func4.php">Function-4</a></li>
+							<li><a href="http://myproject.local/functions/func5.php">Function-5</a></li>
+						</ul>
+						<li><a href="#">Dates</a></li>
+						<ul>
+							<li><a href="http://myproject.local/dates/date1.php">Date-1</a></li>
+							<li><a href="http://myproject.local/dates/date2.php">Date-2</a></li>
+							<li><a href="http://myproject.local/dates/date3.php">Date-3</a></li>
+							<li><a href="http://myproject.local/dates/date4.php">Date-4</a></li>
+							<li><a href="http://myproject.local/dates/date5.php">Date-5</a></li>
+							<li><a href="http://myproject.local/dates/date6.php">Date-6</a></li>
+							<li><a href="http://myproject.local/dates/date7.php">Date-7</a></li>
+							<li><a href="http://myproject.local/dates/date8.php">Date-8</a></li>
+							<li><a href="http://myproject.local/dates/date9.php">Date-9</a></li>
+							<li><a href="http://myproject.local/dates/date10.php">Date-10</a></li>
+							<li><a href="http://myproject.local/dates/date11.php">Date-11</a></li>
+							<li><a href="http://myproject.local/dates/date12.php">Date-12</a></li>
+							<li><a href="http://myproject.local/dates/date13.php">Date-13</a></li>
+							<li><a href="http://myproject.local/dates/date14.php">Date-14</a></li>
+							<li><a href="http://myproject.local/dates/date15.php">Date-15</a></li>
+							<li><a href="http://myproject.local/dates/date16.php">Date-16</a></li>
+						</ul>
+						<li><a href="#">Classes</a></li>
+						<ul>
+							<li><a href="http://myproject.local/classes/class1.php">Class-1</a></li>
+							<li><a href="http://myproject.local/classes/class2.php">Class-2</a></li>
+							<li><a href="http://myproject.local/classes/class3.php">Class-3</a></li>
+							<li><a href="http://myproject.local/classes/class4.php">Class-4</a></li>
+							<li><a href="http://myproject.local/classes/class5.php">Class-5</a></li>
+							<li><a href="http://myproject.local/classes/class6.php">Class-6</a></li>
+						</ul>
+						<li><a href="http://myproject.local/file_loader/index6.php">File loader</a></li>
+					</ul>
 				</div> 
 				<div id="content">
+					<h1>Answer</h1>

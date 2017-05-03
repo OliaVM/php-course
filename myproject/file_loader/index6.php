@@ -1,8 +1,7 @@
+<?php require_once  '/var/www/html/myproject/webPages/header.php'; ?> 
 <?php
-
 //var_dump($_POST);
 //var_dump($_FILES);
-
 $isFormSubmit = isset($_POST['csv_file_upload']);  // Проверяем, загрузил ли пользователь файл
 if ($isFormSubmit === true) {
     $csvFile =  (isset($_Files['csv_file']['tmp_name']))
@@ -52,9 +51,9 @@ var_dump($users);
         <h1> CSV loader </h1>
 
         <form method = "POST"  name = "csv_file_upload" enctype="multipart/form-data">
-        <input type ='hidden'>
-         Csv file: <input type = 'file' name = "csv_file">
-                <input type = "submitt" name = "csv_file_submit" value = "upload">
+            <input type ='hidden'>
+            Csv file: <input type = 'file' name = "csv_file">
+            <input type = "submit" name = "csv_file_submit" value = "upload">
         </form>
 
         <?php if ($isFormSubmit === true): ?>
@@ -91,7 +90,7 @@ var_dump($users);
         <?php endif; ?>
     </body>
 </html>
-
+<?php require_once  '/var/www/html/myproject/webPages/footer.php'; ?> 
 
 
 

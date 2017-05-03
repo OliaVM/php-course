@@ -1,4 +1,5 @@
 <?php
+require_once  '/var/www/html/myproject/webPages/header.php';
 // Напишите PHP класс, который считает факториал числа.
 class Factorial
 {
@@ -25,6 +26,6 @@ class Factorial
 $object = new Factorial;
 echo "Факториал = " . $object->calculationFactorial(10);
 //echo "Факториал = " . $object->calculationFactorial($object->__construct($n = 10));
-
+require_once  '/var/www/html/myproject/webPages/footer.php';
 
 

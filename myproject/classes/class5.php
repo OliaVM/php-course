@@ -1,4 +1,5 @@
 <?php
+require_once  '/var/www/html/myproject/webPages/header.php';
 //Вычислите разницу между двумя датами, используя PHP ООП подход.
 //Пример: Даты: 1981-11-03, 2013-09-04 
 //Ожидаемый результат: Difference : 31 years, 10 months, 1 days 
@@ -18,4 +19,4 @@ $datetime1 = new DateTime('1981-11-03');
 $datetime2 = new DateTime('2013-09-04');
 $interval = $datetime1->diff($datetime2);
 echo "C 1981-11-03 по 2013-09-04  прошло " . $interval->format('%Y лет, %m меясцев, %d дней');
-
+require_once  '/var/www/html/myproject/webPages/footer.php';

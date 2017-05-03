@@ -1,4 +1,5 @@
 <?php
+require_once  '/var/www/html/myproject/webPages/header.php';
 // Напишите простой PHP класс, который отображает следующую строку: 'MyClass class has initialized !'
 class ClassPhp
 {
@@ -18,6 +19,7 @@ class ClassPhp2
 }
 $stroka2 = new ClassPhp2;
 echo $stroka2->getName();
+require_once  '/var/www/html/myproject/webPages/footer.php';
 
 
 

@@ -1,4 +1,5 @@
 <?php
+require_once  '/var/www/html/myproject/webPages/header.php';
 function calculationFactorial($n)
 {
 	if ($n == 0){
@@ -12,3 +13,4 @@ function calculationFactorial($n)
 }
 $primer = calculationFactorial(10);
 echo "Факториал числа 10 = " . $primer;
+require_once  '/var/www/html/myproject/webPages/footer.php';
